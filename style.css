@@ -1,0 +1,88 @@
+html {
+    font-family: sans-serif;
+}
+
+/* header -  Willkommen bei Wikipedia */
+header p{
+    line-height: 1.6;
+    margin: 0.5em;
+}
+
+a, header p, .first-row, .second-row, .third-row{
+    text-align: center;
+    text-decoration: none;
+}
+
+.left li, .right li, .search{
+    display: inline;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+.log-in li, .first-row li, .second-row li, .third-row li, footer li{
+    display: inline;
+    margin: 0 1.25em;
+}
+
+.current-news p{
+    text-align: left;
+}
+
+
+/* headings design */
+header h2,
+section h2,
+footer h2 {
+    background-color: #d8e8ff;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: medium;
+    padding: 6px;
+}
+
+header h2, #artikel-des-tages h2, footer h2 {
+    text-align: center;
+}
+
+header, section, footer {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.juicer {
+    float: left;
+    margin: 5px;
+}
+
+.heading {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+/* footer */
+.footer-links ul, .panel ul{
+    padding: 0;
+}
+
+.footer-links li{
+    display: inline;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+        ".logo .log-in .log-in"
+        ".logo .top .top"
+        ".panel .welcome .welcome"
+        ".panel .current-news .current-news"
+        ".panel .daily-article. .was-geschah-heute"
+        ".panel .verstorben-2022 .lustige-memes"
+        ".panel footer footer"
+        ".panel .real-footer .real-footer";
+}
