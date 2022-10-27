@@ -1,0 +1,304 @@
+/* #f6f6f6 */
+
+/* GENERAL */
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #f6f6f6;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:active{
+    color: orange;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p{
+    line-height: 1.6;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* COLORING */
+.logo,
+.panel,
+.infos,
+.footer-links,
+.buttons{
+    background-color: #f6f6f6;
+}
+
+/* TOP NAVIGATION */
+.log-in ul,
+.left ul,
+.right ul{
+    display: inline-flex;    
+}
+
+.log-in ul{
+    margin: 0;
+    padding: 0;
+}
+
+.left ul{
+    float: left;
+}
+
+.log-in ul,
+.right ul{
+    float: right;
+}
+
+.log-in li,
+.left li,
+.right li{
+    margin: 6px;
+}
+
+.log-in li,
+.left li,
+.right li,
+.panel h3,
+.panel ul {
+    font-size: small;
+}
+
+.top-navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.top-navigation ul,
+.panel ul{
+    margin: 0;
+    padding: 0;
+}
+
+.left{    
+    flex-grow: 1;
+}
+
+.right{
+    flex-grow: auto;
+}
+
+.panel ul,
+.panel h3 {
+    float: left;
+    margin: 2px 10px;
+    padding: 5px;
+    font-size: smaller;
+}
+
+.panel h3{
+    background-image: linear-gradient(to right, rgba(200, 204, 209, 0) 0, #c8ccd1 33%, #c8ccd1 66%, rgba(200, 204, 209, 0) 100%);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+}
+
+.panel li{
+    line-height: 1.6;
+}
+/* SECTIONS - GENERAL */
+
+h2{
+    font-size: medium;
+    background-color: #d8e8ff;
+    border-bottom: 1px solid black;
+    padding: 7px;
+    margin: 0;
+}
+
+
+
+.welcome,
+.current-news,
+.daily-article,
+.what-happened,
+.died-in-2022,
+.funny-memes,
+.projects {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.welcome p,
+.current-news p,
+.daily-article p,
+.what-happened p,
+.died-in-2022 p,
+.funny-memes p,
+.projects p {
+    padding: 0 10px;
+}
+
+.welcome p,
+.projects p{
+    text-align: center;
+}
+
+/* SECTIONS - DETAILS */
+
+.greeting h2, .current-news h2, .projects h2{
+    text-align: center;
+}
+
+.categories ul,
+.filters ul,
+.others ul,
+.projects ul{
+    text-align: center;
+    padding: 0 1vw;
+}
+
+.categories li,
+.filters li,
+.others li,
+.projects li,
+.footer-links li,
+.other-links-article li,
+.other-links-date li{
+    display: inline;
+    padding: 0 1vw;
+    white-space: nowrap;
+}
+
+.title, .projects a{
+    font-weight: bold;
+}
+
+.what-happened ul,
+.died-in-2022 ul,
+.funny-memes ul{
+    list-style-type: disc;
+}
+
+.other-links-article ul,
+.other-links-date ul,
+.other-links-died{
+    text-align: right;
+}
+
+.other-links-article li,
+.other-links-date li,
+.other-links-died{
+    font-size: smaller;
+}
+
+/* FOOTER */
+.infos,
+.footer-links{
+    font-size: smaller;
+}
+
+.infos p{
+    line-height: 1.6;
+}
+
+.footer-links ul{
+    margin: 0;
+    padding: 0;
+}
+
+.buttons{
+    display: flex;
+    justify-content: end;
+}
+.buttons a{
+    padding-left: 5px;
+}
+
+/* GRID */
+
+.page-container{
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-areas: 
+        "logo log-in log-in"
+        "logo navigation navigation"
+        "logo welcome welcome"
+        "panel welcome welcome"
+        "panel current-news current-news"
+        "panel daily-article died-in-2022"
+        "panel what-happened funny-memes"
+        "panel projects projects"
+        "panel infos infos"
+        "panel footer-links footer-links"
+        "panel . buttons"
+    ;
+    grid-gap: 10px;
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.top-navigation{
+    grid-area: navigation;
+}
+
+.log-in{
+    grid-area: log-in;
+}
+
+.left{
+    grid-area: nav-left;
+}
+
+.right{
+    grid-area: nav-right;
+}
+
+.panel{
+    grid-area: panel;
+}
+
+.welcome{
+    grid-area: welcome;
+}
+
+.current-news{
+    grid-area: current-news;
+}
+
+.daily-article{
+    grid-area: daily-article;
+}
+
+.died-in-2022{
+    grid-area: died-in-2022;
+}
+
+.what-happened{
+    grid-area: what-happened;
+}
+
+.funny-memes{
+    grid-area: funny-memes;
+}
+
+.projects{
+    grid-area: projects;
+}
+
+.infos{
+    grid-area: infos;
+}
+
+.footer-links{
+    grid-area: footer-links;
+}
+
+.buttons{
+    grid-area: buttons;
+}

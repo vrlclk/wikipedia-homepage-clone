@@ -1,14 +1,15 @@
+/* GENERAL */
+
 html {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* header -  Willkommen bei Wikipedia */
-header p{
+.header p{
     line-height: 1.6;
-    margin: 0.5em;
 }
 
-a, header p, .first-row, .second-row, .third-row{
+a, .header p, .first-row, .second-row, .third-row, footer{
     text-align: center;
     text-decoration: none;
 }
@@ -17,11 +18,11 @@ a, header p, .first-row, .second-row, .third-row{
     display: inline;
 }
 
-header a:hover{
+a:hover{
     text-decoration: underline;
 }
 
-.log-in li, .first-row li, .second-row li, .third-row li, footer li{
+.first-row li, .second-row li, .third-row li, footer li{
     display: inline;
     margin: 0 1.25em;
 }
@@ -30,23 +31,23 @@ header a:hover{
     text-align: left;
 }
 
-
 /* headings design */
-header h2,
-section h2,
-footer h2 {
+.header h2,
+.section h2,
+.footer h2 {
     background-color: #d8e8ff;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     font-size: medium;
     padding: 6px;
+    margin: 0;
 }
 
-header h2, #artikel-des-tages h2, footer h2 {
+.header h2, #artikel-des-tages h2, .footer h2 {
     text-align: center;
 }
 
-header, section, footer {
+.header, .section, .footer {
     border-left: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
@@ -66,6 +67,11 @@ ul {
 }
 
 /* footer */
+.footer li{
+    display: inline;
+    text-align: center;
+}
+
 .footer-links ul, .panel ul{
     padding: 0;
 }
@@ -74,15 +80,88 @@ ul {
     display: inline;
 }
 
-.grid-container{
+/* GRID */
+
+.page-container{
     display: grid;
-    grid-template-areas:
-        ".logo .log-in .log-in"
-        ".logo .top .top"
-        ".panel .welcome .welcome"
-        ".panel .current-news .current-news"
-        ".panel .daily-article. .was-geschah-heute"
-        ".panel .verstorben-2022 .lustige-memes"
-        ".panel footer footer"
-        ".panel .real-footer .real-footer";
+    grid-template-columns: 150px 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.panel{
+    grid-column: 1 / 2;
+    grid-row: 1 / 10;
+    font-size: smaller;
+    margin: 10px;
+}
+
+.log-in{
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+    text-align: right;
+    font-size: smaller;
+}
+
+.log-in li{
+    display: inline;
+    text-align: right;
+}
+
+.navigation .top .left{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.left li{
+    text-align: left;
+    font-size: smaller;
+}
+
+div.navigation.top.right{
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+
+.right li{
+    text-align: right;
+    font-size: smaller;
+}
+
+.header{
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+}
+
+.main{
+    grid-row: 4 / 8;
+}
+
+.daily-article{
+    grid-row: 4 / 5;
+    grid-column: 2 / 4;
+}
+
+.was-geschah-heute{
+    grid-row: 5 / 6;
+    grid-column: 2 / 4;
+}
+
+.verstorben-2022{
+    grid-row: 6 / 7;
+    grid-column: 2 / 4;
+}
+
+.lustige-memes{
+    grid-row: 7 / 8;
+    grid-column: 2 / 4;
+}
+
+.footer{
+    grid-row: 8 / 9;
+    grid-column: 2 / 4;
+}
+
+.real-footer{
+    grid-row: 9 / 10;
+    grid-column: 2 / 4;
 }

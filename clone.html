@@ -7,17 +7,17 @@
         <meta name="description" content="Umgeschrieben von vrlc als Übung für das Selbststudium mit HTML und CSS" />
         <title>Wikipedia - Die freie Enzyklopädie</title>
         <link rel="icon" href="pictures/wikipedia.ico" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="new-style.css" />
     </head>
     
     <body>
-        <div class=".grid-container">
+        <div class="page-container" />
             <div class="logo">
                 <a href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite">
                     <img src="pictures/dewiki.png" alt="Das Logo von Wikipedia" />
                 </a>
             </div>
-    
+
             <div class="log-in">
                 <ul>
                     <li>Nicht angemeldet</li>
@@ -27,141 +27,137 @@
                     <li><a href="https://de.wikipedia.org/w/index.php?title=Spezial:Anmelden&returnto=Wikipedia%3AHauptseite">Anmelden</a></li>
                 </ul>
             </div>
-    
-            <nav class="navigation">
-                <div class="top">
-                    <div class="left">
-                        <nav>
-                            <ul>
-                                <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite">Hauptseite</a></li>
-                                <li><a href="https://de.wikipedia.org/wiki/Wikipedia_Diskussion:Hauptseite">Diskussion</a></li>
-                            </ul>
-                        </nav>
-                    </div>
             
-                    <div class="right">
+            <div class="top-navigation">
+                <div class="left">
+                    <nav>
+                        <ul>
+                            <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite">Hauptseite</a></li>
+                            <li><a href="https://de.wikipedia.org/wiki/Wikipedia_Diskussion:Hauptseite">Diskussion</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="right">
+                    <nav>
                         <ul>
                             <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite">Lesen</a></li>
                             <li><a href="https://de.wikipedia.org/w/index.php?title=Wikipedia:Hauptseite&action=edit">Quelltext anzeigen</a></li>
                             <li><a href="https://de.wikipedia.org/w/index.php?title=Wikipedia:Hauptseite&action=history">Versionsgeschichte</a></li>
                         </ul>
-                        <input class="search" type="search" placeholder="Wikipedia durchsuchen">
-                    </div>
-                </div>
-            
-                <div class="panel">
-                    <nav class="main">
-                        <ul>
-                            <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite" alt="Die Hauptseite von Wikipedia">Hauptseite</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Portal:Wikipedia_nach_Themen">Themenportale</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Spezial:Zuf%C3%A4llige_Seite">Zufälliger Artikel</a></li>
-                        </ul>
-                    </nav>
-            
-                    <nav class="participate">
-                        <h3>Mitmachen</h3>
-                        <ul>
-                            <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Beteiligen">Artikel verbessern</a></li>   
-                            <li><a href="https://de.wikipedia.org/wiki/Hilfe:Neuen_Artikel_anlegen">Neuen Artikel anlegen</a></li> 
-                            <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Autorenportal">Autorenportal</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Hilfe:%C3%9Cbersicht">Hilfe</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Spezial:Letzte_%C3%84nderungen">Letzte Änderungen</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Kontakt">Kontakt</a></li>
-                            <li><a href="https://spenden.wikimedia.de/?piwik_campaign=de.wikipedia.org&piwik_kwd=sidebar">Spenden</a></li>
-                        </ul>
-                    </nav>
-            
-                    <nav class="tools">
-                        <h3>Werkzeuge</h3>
-                        <ul>
-                            <li><a href="https://de.wikipedia.org/wiki/Spezial:Linkliste/Wikipedia:Hauptseite">Links auf diese Seite</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Spezial:%C3%84nderungen_an_verlinkten_Seiten/Wikipedia:Hauptseite">Änderungen an verlinkten Seiten</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Spezial:Spezialseiten">Spezialseiten</a></li>
-                            <li><a href="https://de.wikipedia.org/w/index.php?title=Wikipedia:Hauptseite&oldid=220483682">Permanenter Link</a></li>
-                            <li><a href="https://de.wikipedia.org/w/index.php?title=Wikipedia:Hauptseite&action=info">Seiteninformationen</a></li>
-                            <li><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5296">Wikidata-Datenobjekt</a></li>
-                        </ul>
-                    </nav>
-            
-                    <nav class="print-export">
-                        <h3>Drucken/exportieren</h3>
-                        <ul>
-                            <li><a href="https://de.wikipedia.org/w/index.php?title=Spezial:DownloadAsPdf&page=Wikipedia%3AHauptseite&action=show-download-screen">Als PDF herunterladen</a></li>
-                            <li><a href="https://de.wikipedia.org/w/index.php?title=Wikipedia:Hauptseite&printable=yes">Druckversion</a></li>
-                        </ul>
-                    </nav>
-            
-                    <nav class="languages">
-                        <h3>In anderen Sprachen</h3>
-                        <ul>
-                            <li><a href="https://en.wikipedia.org/wiki/" title="Englisch" lang="en" hreflang="en">Englisch</a></li>
-                            <li><a href="https://es.wikipedia.org/wiki/" title="Spanisch" lang="en" hreflang="en">Español</a></li>
-                            <li><a href="https://fr.wikipedia.org/wiki/" title="Französisch" lang="fr" hreflang="fr">Français</a></li>
-                            <li><a href="https://it.wikipedia.org/wiki/" title="Italienisch" lang="it" hreflang="it">Italiano</a></li>
-                            <li><a href="https://jp.wikipedia.org/wiki/" title="Japanisch" lang="jp" hreflang="jp">日本語</a></li>
-                            <li><a href="https://ko.wikipedia.org/wiki/" title="Koreanisch" lang="ko" hreflang="ko">한국어</a></li>
-                            <li><a href="https://pt.wikipedia.org/wiki/" title="Portugiesisch" lang="pt" hreflang="pt">Português</a></li>
-                            <li><a href="https://sv.wikipedia.org/wiki/" title="Schwedisch" lang="sv" hreflang="sv">Svenska</a></li>
-                            <li><a href="https://tr.wikipedia.org/wiki/" title="Türkisch" lang="tr" hreflang="tr">Türkçe</a></li>
-                            <li><a href="https://zh.wikipedia.org/wiki/" title="Chinesisch (Mandarin)" lang="zh" hreflang="zh">中文</a></li>
-                        </ul>
                     </nav>
                 </div>
-            </nav>
+                <input class="search" type="search" placeholder="Wikipedia durchsuchen">
+            </div>
+               
+            <div class="panel">
+                <nav class="main">
+                    <ul>
+                        <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite" alt="Die Hauptseite von Wikipedia">Hauptseite</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Portal:Wikipedia_nach_Themen">Themenportale</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Spezial:Zuf%C3%A4llige_Seite">Zufälliger Artikel</a></li>
+                    </ul>
+                </nav>
+        
+                <nav class="participate">
+                    <h3>Mitmachen</h3>
+                    <ul>
+                        <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Beteiligen">Artikel verbessern</a></li>   
+                        <li><a href="https://de.wikipedia.org/wiki/Hilfe:Neuen_Artikel_anlegen">Neuen Artikel anlegen</a></li> 
+                        <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Autorenportal">Autorenportal</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Hilfe:%C3%9Cbersicht">Hilfe</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Spezial:Letzte_%C3%84nderungen">Letzte Änderungen</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Kontakt">Kontakt</a></li>
+                        <li><a href="https://spenden.wikimedia.de/?piwik_campaign=de.wikipedia.org&piwik_kwd=sidebar">Spenden</a></li>
+                    </ul>
+                </nav>
+        
+                <nav class="tools">
+                    <h3>Werkzeuge</h3>
+                    <ul>
+                        <li><a href="https://de.wikipedia.org/wiki/Spezial:Linkliste/Wikipedia:Hauptseite">Links auf diese Seite</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Spezial:%C3%84nderungen_an_verlinkten_Seiten/Wikipedia:Hauptseite">Änderungen an verlinkten Seiten</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Spezial:Spezialseiten">Spezialseiten</a></li>
+                        <li><a href="https://de.wikipedia.org/w/index.php?title=Wikipedia:Hauptseite&oldid=220483682">Permanenter Link</a></li>
+                        <li><a href="https://de.wikipedia.org/w/index.php?title=Wikipedia:Hauptseite&action=info">Seiteninformationen</a></li>
+                        <li><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5296">Wikidata-Datenobjekt</a></li>
+                    </ul>
+                </nav>
+        
+                <nav class="print-export">
+                    <h3>Drucken/exportieren</h3>
+                    <ul>
+                        <li><a href="https://de.wikipedia.org/w/index.php?title=Spezial:DownloadAsPdf&page=Wikipedia%3AHauptseite&action=show-download-screen">Als PDF herunterladen</a></li>
+                        <li><a href="https://de.wikipedia.org/w/index.php?title=Wikipedia:Hauptseite&printable=yes">Druckversion</a></li>
+                    </ul>
+                </nav>
+        
+                <nav class="languages">
+                    <h3>In anderen Sprachen</h3>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/" title="Englisch" lang="en" hreflang="en">Englisch</a></li>
+                        <li><a href="https://es.wikipedia.org/wiki/" title="Spanisch" lang="en" hreflang="en">Español</a></li>
+                        <li><a href="https://fr.wikipedia.org/wiki/" title="Französisch" lang="fr" hreflang="fr">Français</a></li>
+                        <li><a href="https://it.wikipedia.org/wiki/" title="Italienisch" lang="it" hreflang="it">Italiano</a></li>
+                        <li><a href="https://jp.wikipedia.org/wiki/" title="Japanisch" lang="jp" hreflang="jp">日本語</a></li>
+                        <li><a href="https://ko.wikipedia.org/wiki/" title="Koreanisch" lang="ko" hreflang="ko">한국어</a></li>
+                        <li><a href="https://pt.wikipedia.org/wiki/" title="Portugiesisch" lang="pt" hreflang="pt">Português</a></li>
+                        <li><a href="https://sv.wikipedia.org/wiki/" title="Schwedisch" lang="sv" hreflang="sv">Svenska</a></li>
+                        <li><a href="https://tr.wikipedia.org/wiki/" title="Türkisch" lang="tr" hreflang="tr">Türkçe</a></li>
+                        <li><a href="https://zh.wikipedia.org/wiki/" title="Chinesisch (Mandarin)" lang="zh" hreflang="zh">中文</a></li>
+                    </ul>
+                </nav>
+            </div>
             
-            <header>
-                <div class="welcome">
+            <div class="welcome">
+                <div class="greeting">
                     <h2>Willkommen bei Wikipedia</h2>
                     <p><a href="https://de.wikipedia.org/wiki/Wikipedia:%C3%9Cber_Wikipedia">Wikipedia</a> ist ein Projekt zum Aufbau einer <a href="https://de.wikipedia.org/wiki/Enzyklop%C3%A4die">Enzyklopädie</a> aus <a href="https://de.wikipedia.org/wiki/Freie_Inhalte">freien Inhalten</a>, zu denen <a href="https://de.wikipedia.org/wiki/Wikipedia:Starthilfe">du sehr gern beitragen kannst</a>. Seit März 2001 sind <a href="https://de.wikipedia.org/wiki/Spezial:Statistik">2.733.634</a> Artikel in deutscher Sprache entstanden.</p>
-                    <div class="first-row" style="font-weight: bold;">
-                        <ul>
-                            <li><a href="https://de.wikipedia.org/wiki/Portal:Geographie">Geographie</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Portal:Geschichte">Geschichte</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Portal:Gesellschaft">Gesellschaft</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Portal:Kunst_und_Kultur">Kunst und Kultur</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Portal:Religion">Religion</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Portal:Sport">Sport</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Portal:Technik">Technik</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Portal:Wissenschaft">Wissenschaft</a></li>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="second-row" style="font-weight: bold;">
-                        <ul>
-                            <li><a href="https://de.wikipedia.org/wiki/Portal:Wikipedia_nach_Themen">Artikel nach Themen</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Kategorie:!Hauptkategorie">Artikel nach Kategorien</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Portal:Gesprochene_Wikipedia">Gesprochene Wikipedia</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Archiv">Archiv der Hauptseite</a></li>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="third-row">
-                        <ul>
-                            <li style="font-weight: bold;"><a href="https://de.wikipedia.org/wiki/Wikipedia:Starthilfe">Mitmachen</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Mentorenprogramm">Mentorenprogramm</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Spezial:Meine_Sprache/Wikipedia:Kontakt">Kontakt</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Presse">Presse</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Statistik">Statistik</a></li>
-                            <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Sprachen">Sprachversionen</a></li>
-                        </ul>
-                    </div>
                 </div>
 
-                <div class="current-news">
-                    <h2>Wikipedia aktuell</h2>
-                    <p>Ab sofort können stimmberechtigte Benutzerinnen und Benutzer Stimmen für den Publikumspreis des <a href="https://de.wikipedia.org/wiki/Wikipedia:Schreibwettbewerb/Publikumspreis">37. Schreibwettbewerbs</a> sowie für den <a href="https://de.wikipedia.org/wiki/Wikipedia:Miniaturenwettbewerb">18. Miniaturenwettbewerb</a> abgeben.</p>
+                <div class="categories" style="font-weight: bold;">
+                    <ul>
+                        <li><a href="https://de.wikipedia.org/wiki/Portal:Geographie">Geographie</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Portal:Geschichte">Geschichte</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Portal:Gesellschaft">Gesellschaft</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Portal:Kunst_und_Kultur">Kunst und Kultur</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Portal:Religion">Religion</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Portal:Sport">Sport</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Portal:Technik">Technik</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Portal:Wissenschaft">Wissenschaft</a></li>
+                    </ul>
                 </div>
-            </header>
-            
-            
-            <br>
-            
 
-            <main>
-                <section id="daily-article">
+                <div class="filters" style="font-weight: bold;">
+                    <ul>
+                        <li><a href="https://de.wikipedia.org/wiki/Portal:Wikipedia_nach_Themen">Artikel nach Themen</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Kategorie:!Hauptkategorie">Artikel nach Kategorien</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Portal:Gesprochene_Wikipedia">Gesprochene Wikipedia</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Archiv">Archiv der Hauptseite</a></li>
+                    </ul>
+                </div>
+                
+                <div class="others">
+                    <ul>
+                        <li style="font-weight: bold;"><a href="https://de.wikipedia.org/wiki/Wikipedia:Starthilfe">Mitmachen</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Mentorenprogramm">Mentorenprogramm</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Spezial:Meine_Sprache/Wikipedia:Kontakt">Kontakt</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Presse">Presse</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Statistik">Statistik</a></li>
+                        <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Sprachen">Sprachversionen</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="current-news">
+                <h2>Wikipedia aktuell</h2>
+                <p>Ab sofort können stimmberechtigte Benutzerinnen und Benutzer Stimmen für den Publikumspreis des <a href="https://de.wikipedia.org/wiki/Wikipedia:Schreibwettbewerb/Publikumspreis">37. Schreibwettbewerbs</a> sowie für den <a href="https://de.wikipedia.org/wiki/Wikipedia:Miniaturenwettbewerb">18. Miniaturenwettbewerb</a> abgeben.</p>
+            </div>
+
+                <div class="daily-article">
                     <h2>Artikel des Tages</h2>
                     <img class="juicer" src="pictures/xQcOW" alt="Félix (xQc) Lengyel">
-                    <p><span class="heading">Félix 'xQc' Lengyel</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                    <p><span class="title">Félix 'xQc' Lengyel</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
                     magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
                     gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
                     elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
@@ -172,11 +168,16 @@
                     elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
                     accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
                     amet.</p>
-                </section>
+                    <div class="other-links-article">
+                        <ul>
+                            <li><a href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite/Artikel_des_Tages/Chronologie_2022">Archiv</a></li> |
+                            <li>Weitere <a href="https://de.wikipedia.org/wiki/Wikipedia:Exzellente_Artikel">ekzellente</a> und <a href="https://de.wikipedia.org/wiki/Wikipedia:Lesenswerte_Artikel">lesenswerte</a> Artikel sowie <a href="https://de.wikipedia.org/wiki/Wikipedia:Informative_Listen_und_Portale">informative</a> Listen</li> |
+                            <li><a href="https://de.wikipedia.org/w/api.php?action=featuredfeed&feed=featured&feedformat=atom">RSS-Feed</a></li>
+                        </ul>
+                    </div>
+                </div>
     
-                <br>
-    
-                <section id="was-geschah-heute">
+                <div class="what-happened">
                     <h2>Was geschah am <time datetime="2022-10-09">9. Oktober 2022</time></h2>
                     <ul>
                         <li><a href="https://www.kicker.de/qualifikation-zur-em-2024-2022-23/auslosung">EM-Auslosung</a></li>
@@ -184,23 +185,28 @@
                         <li>Landtagswahl in Niedersachsen</li>
                         <li><a href="https://www.twitchcon.com/san-diego-2022/">TwitchCon San Diego</a></li>
                     </ul>
-                </section>
+                    <div class="other-links-date">
+                        <ul>
+                            <li><a href="https://de.wikipedia.org/wiki/21._Oktober">Weitere Ereignisse</a></li> |
+                            <li><a href="https://de.wikipedia.org/w/api.php?action=featuredfeed&feed=onthisday&feedformat=atom">RSS-Feed</a></li>
+                        </ul>
+                    </div>
+                </div>
     
-                <br>
-    
-                <section id="verstorben-2022">
+                <div class="died-in-2022">
                     <h2>Verstorben in 2022</h2>
                     <ul>
                         <li><a href="#">Königin Elisabeth II.</a> (96)</li>
                         <li><a href="#">Coolio</a> (59)</li>
-                        <li><a href="#">Schinzo Abe</a> (68)</li>
+                        <li><a href="#">Shinzo Abe</a> (68)</li>
                         <li><a href="#">Bob Saget</a> (65)</li>
                     </ul>
-                </section>
+                    <div class="other-links-died">
+                        <a href="https://de.wikipedia.org/wiki/Nekrolog_2022">Weitere kürzlich Verstorbene</a>
+                    </div>
+                </div>
     
-                <br>
-    
-                <section id="lustige-memes">
+                <div class="funny-memes">
                     <h2>Lustige Memes in 2022</h2>
                     <ul>
                         <li><a href="https://www.youtube.com/shorts/zZJw-KYrXJ0">I'm over here stroking my dick I got lotion on my dick right now I'm just stroking my shit I'm horny as fuck man I'm a
@@ -209,35 +215,33 @@
                         <li>LUKA TIM</li>
                         <li>Holy Fuck, I'm coming... Lois... aahhh aaaahhhhhh</li>
                     </ul>
-                </section>
-            </main>
+                </div>
             
-            <br>
-            
-            <footer>
-                <h2>Schwesterprojekte</h2>
-                <ul>
-                    <li><a href="https://meta.wikimedia.org/wiki/Hauptseite?uselang=de">Meta-Wiki</a> -- Koordination</li>
-                    <li><a href="https://commons.wikimedia.org/wiki/Hauptseite?uselang=de">Commons</a> -- Medien</li>
-                    <li><a href="https://de.wiktionary.org/wiki/Wiktionary:Hauptseite">Wiktionary</a> -- Wörterbuch</li>
-                    <li><a href="https://de.wikibooks.org/wiki/Hauptseite">Wikibooks</a> -- Lehrbücher</li>
-                    <li><a href="https://de.wikiquote.org/wiki/Hauptseite">Wikiquote</a> -- Zitate</li>
-                    <li><a href="https://de.wikiversity.org/wiki/Hauptseite">Wikiversity</a> -- Lernplattform</li>
-                    <li><a href="https://de.wikisource.org/wiki/Hauptseite">Wikisource</a> -- Quellen</li>
-                    <li><a href="https://de.wikinews.org/wiki/Hauptseite">Wikinews</a> -- Nachrichten</li>
-                    <li><a href="https://www.wikidata.org/wiki/Wikidata:Main_page?uselang=de">Wikidata</a> -- Wissensdatenbank</li>
-                    <li><a href="https://species.wikimedia.org/wiki/Hauptseite">Wikispecies</a> -- Artenverzeichnis</li>
-                    <li><a href="https://de.wikivoyage.org/wiki/Hauptseite">Wikivoyage</a> -- Reiseführer</li>
-                </ul>
-            </footer>
+                <div class="projects">
+                    <h2>Schwesterprojekte</h2>
+                    <ul>
+                        <li><a href="https://meta.wikimedia.org/wiki/Hauptseite?uselang=de">Meta-Wiki</a> -- Koordination</li>
+                        <li><a href="https://commons.wikimedia.org/wiki/Hauptseite?uselang=de">Commons</a> -- Medien</li>
+                        <li><a href="https://de.wiktionary.org/wiki/Wiktionary:Hauptseite">Wiktionary</a> -- Wörterbuch</li>
+                        <li><a href="https://de.wikibooks.org/wiki/Hauptseite">Wikibooks</a> -- Lehrbücher</li>
+                        <li><a href="https://de.wikiquote.org/wiki/Hauptseite">Wikiquote</a> -- Zitate</li>
+                        <li><a href="https://de.wikiversity.org/wiki/Hauptseite">Wikiversity</a> -- Lernplattform</li>
+                        <li><a href="https://de.wikisource.org/wiki/Hauptseite">Wikisource</a> -- Quellen</li>
+                        <li><a href="https://de.wikinews.org/wiki/Hauptseite">Wikinews</a> -- Nachrichten</li>
+                        <li><a href="https://www.wikidata.org/wiki/Wikidata:Main_page?uselang=de">Wikidata</a> -- Wissensdatenbank</li>
+                        <li><a href="https://species.wikimedia.org/wiki/Hauptseite">Wikispecies</a> -- Artenverzeichnis</li>
+                        <li><a href="https://de.wikivoyage.org/wiki/Hauptseite">Wikivoyage</a> -- Reiseführer</li>
+                    </ul>
+                </div>
+                
+                <div class="infos">
+                    <p>Diese Seite wurde zuletzt am <time datetime="2022-10-21">21. Oktober 2022</time> bearbeitet.</p>
+                    
+                    <a href="https://pageviews.wmcloud.org/?pages=Wikipedia:Hauptseite&project=de.wikipedia.org">Abrufstatistik</a>
 
-            <div class="real-footer">
-                <p>Diese Seite wurde zuletzt am <time datetime="2022-10-14">14. Oktober 2022</time> bearbeitet.</p>
-
-                <a href="https://pageviews.wmcloud.org/?pages=Wikipedia:Hauptseite&project=de.wikipedia.org">Abrufstatistik</a>
-
-                <p>Der Text ist unter der Lizenz <a href="https://de.wikipedia.org/wiki/Wikipedia:Lizenzbestimmungen_Creative_Commons_Attribution-ShareAlike_3.0_Unported">"Creative Commons Attribution/Share Alike"</a> verfügbar; Informationen zu den Urhebern und zum Lizenzstatus eingebundener Mediendateien (etwa Bilder oder Videos) können im Regelfall durch Anklicken dieser abgerufen werden. Möglicherweise unterliegen die Inhalte jeweils zusätzlichen Bedingungen. Durch die Nutzung dieser Webseite erklären Sie sich mit den Nutzungsbedingungen und der Datenschutzrichtlinie einverstanden.</p>
-                <p>Wikipedia&reg; ist eine eingetraagene Marke der Wikimedia Foundation Inc.</p>
+                    <p>Der Text ist unter der Lizenz <a href="https://de.wikipedia.org/wiki/Wikipedia:Lizenzbestimmungen_Creative_Commons_Attribution-ShareAlike_3.0_Unported">"Creative Commons Attribution/Share Alike"</a> verfügbar; Informationen zu den Urhebern und zum Lizenzstatus eingebundener Mediendateien (etwa Bilder oder Videos) können im Regelfall durch Anklicken dieser abgerufen werden. Möglicherweise unterliegen die Inhalte jeweils zusätzlichen Bedingungen. Durch die Nutzung dieser Webseite erklären Sie sich mit den Nutzungsbedingungen und der Datenschutzrichtlinie einverstanden.</p>
+                    <p>Wikipedia&reg; ist eine eingetraagene Marke der Wikimedia Foundation Inc.</p>
+                </div>
 
                 <div class="footer-links">
                     <ul>
@@ -251,7 +255,7 @@
                     </ul>
                 </div>
 
-                <div class="logos" style="float: right;">
+                <div class="buttons" style="float: right;">
                     <a href="https://wikimediafoundation.org/">
                         <img src="footer/wikimedia-button.png" alt="Ein WikiMedia-Projekt">
                     </a>
@@ -260,7 +264,5 @@
                         <img src="footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki">
                     </a>
                 </div>
-            </div>
-        </div>
     </body>
-</html>
+    </html>
